@@ -80,7 +80,3 @@ Agar mempermudah alur kerja, berikut adalah tabel pintasan utama yang sudah diko
 ---
 
 _Dibuat dan dirawat oleh GoBlock1938._
-
-```
-
-```
