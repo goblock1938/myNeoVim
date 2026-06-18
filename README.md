@@ -29,14 +29,18 @@ nvim
 
 ## 📂 Struktur Direktori
 
-Agar lebih mudah dimodifikasi, konfigurasi ini dibagi menjadi beberapa modul terpisah:
+Konfigurasi ini memiliki struktur yang disesuaikan dengan manajemen plugin modern (berbasis LazyVim / lazy.nvim). Berikut adalah struktur utama dari repositori ini:
 
 ```bash
 ~/.config/nvim/
-├── init.lua # Entry point utama Neovim
-└── lua/
-├── core/ # Pengaturan dasar (options, keymaps, autocommands)
-└── plugins/ # Konfigurasi plugin individual (Telescope, LSP, dll)
+├── init.lua             # Entry point utama Neovim
+├── lua/                 # Folder utama untuk file konfigurasi Lua Anda
+├── lazyvim.json         # Konfigurasi spesifik atau status dari LazyVim
+├── lazy-lock.json       # Menyimpan versi persis dari setiap plugin yang diinstal
+├── .neoconf.json        # Konfigurasi pengaturan Neovim untuk spesifik project
+├── stylua.toml          # Aturan formatting otomatis untuk file Lua Anda
+├── LICENSE              # Lisensi sumber terbuka proyek (Apache-2.0)
+└── README.md            # Dokumentasi konfigurasi (file ini)
 ```
 
 ## 📦 Plugin Utama
@@ -76,3 +80,7 @@ Agar mempermudah alur kerja, berikut adalah tabel pintasan utama yang sudah diko
 ---
 
 _Dibuat dan dirawat oleh GoBlock1938._
+
+```
+
+```
