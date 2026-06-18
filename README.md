@@ -41,37 +41,38 @@ Agar lebih mudah dimodifikasi, konfigurasi ini dibagi menjadi beberapa modul ter
 
 ## 📦 Plugin Utama
 
-Konfigurasi ini menggunakan [Sebutkan Plugin Manager Anda, misal: lazy.nvim / packer.nvim] untuk mengelola plugin. Beberapa plugin andalan yang saya gunakan meliputi:
-Telescope.nvim: Fuzzy finder untuk mencari file dan teks.
-Nvim-Treesitter: Syntax highlighting yang jauh lebih baik.
-Nvim-LSPConfig: Konfigurasi Native Language Server Protocol (LSP).
-(Tambahkan plugin lain yang Anda gunakan di sini...)
-⌨️ Keybindings (Pintasan Keyboard)
-Tombol <Leader> utama yang digunakan dalam konfigurasi ini adalah [Tombol Leader Anda, misal: Spasi].
-Berikut adalah beberapa pintasan penting:
-Pintasan
-Mode
-Deskripsi
-<leader>e
-Normal
-Membuka File Explorer
-<leader>ff
-Normal
-Mencari file (Telescope)
-<leader>w
-Normal
-Menyimpan file
-<leader>q
-Normal
-Keluar / Menutup buffer
-(Sesuaikan tabel ini dengan pintasan khusus yang Anda atur di file keymaps Anda)
-Dibuat oleh GoBlock1938
+Konfigurasi ini dikelola menggunakan **[Sebutkan Plugin Manager, misal: lazy.nvim]**. Berikut adalah daftar plugin andalan yang membuat Neovim ini lebih kuat dan produktif:
+
+- **[Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)**
+  _Fuzzy finder_ serbaguna yang sangat cepat. Membantu mencari nama file, riwayat pencarian, hingga menemukan teks spesifik di seluruh proyek kerja.
+- **[Nvim-Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)**
+  Mesin _parsing_ yang memberikan penyorotan sintaks (_syntax highlighting_) dengan sangat akurat dan cerdas untuk berbagai bahasa pemrograman.
+- **[Nvim-LSPConfig](https://github.com/neovim/nvim-lspconfig)**
+  Konfigurasi dasar untuk mengaktifkan fitur _Language Server Protocol_ (LSP) bawaan Neovim. Ini memberikan editor fitur modern seperti _auto-complete_, deteksi _error_ (_diagnostics_), dan _go-to definition_.
+- **[Nvim-Tree.lua](https://github.com/nvim-tree/nvim-tree.lua)**
+  _File explorer_ berbentuk pohon (sidebar) untuk memudahkan Anda melihat dan mengelola struktur folder proyek secara visual.
+- **[Lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)**
+  _Statusline_ yang ringan di bagian bawah layar. Memberikan informasi penting seperti mode yang sedang aktif, nama file, lokasi kursor, dan status Git.
+
+_(Catatan untuk Anda: Tambahkan atau hapus \_list_ di atas sesuai dengan plugin yang benar-benar Anda pakai di dalam folder konfigurasi Lua Anda).\_
 
 ---
 
-**Catatan untuk Anda saat mengisi draf ini:**
+## ⌨️ Keybindings (Pintasan Keyboard)
 
-1. **URL Clone:** Saya sudah memasukkan URL `https://github.com/goblock1938/myNeoVim.git` yang sesuai dengan nama pengguna GitHub Anda [1, 3].
-2. **Bagian dalam kurung siku `[...]` dan cetak miring:** Bagian ini harus Anda hapus dan ganti dengan alat yang benar-benar Anda pakai di dalam _source code_, karena informasi spesifik seperti _plugin manager_ dan tombol `<Leader>` tidak terlihat di halaman profil Anda.
+Tombol `<Leader>` utama yang digunakan dalam konfigurasi ini adalah **[Isi tombol leader Anda, misal: Spasi]**.
 
-Apakah draf ini sudah sesuai dengan yang Anda bayangkan, atau ada bagian yang ingin ditambahkan (misalnya menambahkan screenshot)?
+Agar mempermudah alur kerja, berikut adalah tabel pintasan utama yang sudah dikonfigurasi:
+
+| Pintasan     |  Mode  | Fungsi Utama                                           |
+| :----------- | :----: | :----------------------------------------------------- |
+| `<leader>e`  | Normal | Membuka atau menutup _File Explorer_                   |
+| `<leader>ff` | Normal | Mencari file di dalam proyek (Telescope)               |
+| `<leader>fg` | Normal | Mencari kata/teks di semua file (Telescope Live Grep)  |
+| `<leader>w`  | Normal | Menyimpan perubahan (_Save_)                           |
+| `<leader>q`  | Normal | Menutup _buffer_ atau keluar dari file                 |
+| `K`          | Normal | Menampilkan informasi (_Hover documentation_) dari LSP |
+
+---
+
+_Dibuat dan dirawat oleh GoBlock1938._
