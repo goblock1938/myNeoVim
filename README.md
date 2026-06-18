@@ -25,14 +25,22 @@ git clone https://github.com/goblock1938/myNeoVim.git ~/.config/nvim
 
 # 3. Buka Neovim (plugin manager akan otomatis menginstal plugin yang dibutuhkan)
 nvim
-📂 Struktur Direktori
+```
+
+## 📂 Struktur Direktori
+
 Agar lebih mudah dimodifikasi, konfigurasi ini dibagi menjadi beberapa modul terpisah:
+
+```bash
 ~/.config/nvim/
-├── init.lua             # Entry point utama Neovim
+├── init.lua # Entry point utama Neovim
 └── lua/
-    ├── core/            # Pengaturan dasar (options, keymaps, autocommands)
-    └── plugins/         # Konfigurasi plugin individual (Telescope, LSP, dll)
-📦 Plugin Utama
+├── core/ # Pengaturan dasar (options, keymaps, autocommands)
+└── plugins/ # Konfigurasi plugin individual (Telescope, LSP, dll)
+```
+
+## 📦 Plugin Utama
+
 Konfigurasi ini menggunakan [Sebutkan Plugin Manager Anda, misal: lazy.nvim / packer.nvim] untuk mengelola plugin. Beberapa plugin andalan yang saya gunakan meliputi:
 Telescope.nvim: Fuzzy finder untuk mencari file dan teks.
 Nvim-Treesitter: Syntax highlighting yang jauh lebih baik.
@@ -59,11 +67,11 @@ Keluar / Menutup buffer
 (Sesuaikan tabel ini dengan pintasan khusus yang Anda atur di file keymaps Anda)
 Dibuat oleh GoBlock1938
 
-***
+---
 
 **Catatan untuk Anda saat mengisi draf ini:**
+
 1. **URL Clone:** Saya sudah memasukkan URL `https://github.com/goblock1938/myNeoVim.git` yang sesuai dengan nama pengguna GitHub Anda [1, 3].
-2. **Bagian dalam kurung siku `[...]` dan cetak miring:** Bagian ini harus Anda hapus dan ganti dengan alat yang benar-benar Anda pakai di dalam *source code*, karena informasi spesifik seperti *plugin manager* dan tombol `<Leader>` tidak terlihat di halaman profil Anda.
+2. **Bagian dalam kurung siku `[...]` dan cetak miring:** Bagian ini harus Anda hapus dan ganti dengan alat yang benar-benar Anda pakai di dalam _source code_, karena informasi spesifik seperti _plugin manager_ dan tombol `<Leader>` tidak terlihat di halaman profil Anda.
 
 Apakah draf ini sudah sesuai dengan yang Anda bayangkan, atau ada bagian yang ingin ditambahkan (misalnya menambahkan screenshot)?
-```
