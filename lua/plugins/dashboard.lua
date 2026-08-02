@@ -29,7 +29,8 @@ return {
           { icon = " ", key = "g", desc = "Find Text", action = ":Telescope live_grep" },
           { icon = " ", key = "r", desc = "Recent Files", action = ":Telescope oldfiles" },
           { icon = "⚙️ ", key = "c", desc = "Config", action = ":e ~/.config/nvim" },
-          { icon = "󰉓 ", key = "-", desc = "Mini Files", action = ":lua MiniFiles.open()<CR>" },
+          -- Di sini sudah aman tanpa <CR>
+          { icon = "󰉓 ", key = "-", desc = "Mini Files", action = ":lua MiniFiles.open()" },
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
@@ -49,4 +50,3 @@ return {
     end,
   },
 }
-
