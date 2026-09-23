@@ -6,3 +6,20 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "sql",
+  callback = function()
+    vim.bo.omnifunc = ""
+  end,
+})
+
+return {
+  "stevearc/conform.nvim",
+  opts = {
+    formatters_by_ft = {
+      -- Daftarkan blade-formatter untuk tipe file blade dan php (jika dianggap php)
+      blade = { "blade-formatter" },
+      php = { "blade-formatter", "pint" },
+    },
+  },
+}

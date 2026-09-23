@@ -21,3 +21,6 @@ vim.opt.smartcase = true
 
 -- swap (optional)
 -- vim.opt.swapfile = false
+-- Mencegah sqlcomplete melakukan auto-drill ke tabel/kolom
+vim.g.omni_sql_no_default_maps = 1
+
