@@ -13,6 +13,12 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.filetype.add({
+  pattern = {
+    [".*%.blade%.php"] = "blade",
+  },
+})
+
 return {
   "stevearc/conform.nvim",
   opts = {
